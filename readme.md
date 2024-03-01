@@ -6,11 +6,11 @@ This code showcases an example of how an integration of POS system backend can c
 
 The approach consist of an Streamlit app that simulates the conversation between a user and a cashier or drive-though seller, in the background a Flask webhook is hearing for all the steps in the conversation, first inferering the intent of the user, then updating the order if requiered and posting to a POS system.
 
-This solution is scalable thanks to a support free database implementation (Mongodb) which helps to store conversation for the agents memory and also to match the POS user id with the selling point. Easily this implementation can serve more than 1 selling point at the same time, includingg aspects such as location, language , tax rate and promotion of the selling point. It also takes care of security of the webhook and the orders placing in a medium level with a simple but effective token authentification.
+This solution is scalable thanks to a support free database implementation (Mongodb) which helps to store conversation for the agents memory and also to match the POS user id with the selling point. Easily this implementation can serve more than 1 selling point at the same time, including aspects such as location, language , tax rate and promotion of the selling point. It also takes care of security of the webhook and the orders placing in a medium level with a simple but effective token authentification.
 
 
 ## _GENAAI APPROACH:
-although agents are boom right now, they are no yet 100% stable, That is why I decided to dont use them for the 100% of the implementation, instead I only use them in a very focused task where they can shine more, the RAG retrieval with tools and functions. For the working flow of the API I decided to use chanes and output parsers, they sound simple, but thet are really effective,fast , stable and save a lot of tokens, making them a sweet spot for this purpose
+although agents are boom right now, they are no yet 100% stable, That is why I decided to dont use them for the 100% of the implementation, instead I only use them in a very focused task where they can shine more, the RAG retrieval with tools and functions. For the working flow of the API I decided to use chains and output parsers, they sound simple, but thet are really effective,fast , stable and save a lot of tokens, making them a sweet spot for this purpose
 
 _
 ## _POS Functions
