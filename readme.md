@@ -1,4 +1,4 @@
-#POS implementation with GENAI
+# POS implementation with GENAI
 
 ## POS GenAI integrations
 
